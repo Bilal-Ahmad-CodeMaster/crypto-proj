@@ -1,0 +1,32 @@
+@import "tailwindcss";
+
+/* Small helpers to match the design exactly */
+body {
+  @apply bg-gray-50 font-sans text-gray-900 antialiased;
+}
+
+/* Hide focus indicators for all form inputs */
+input:focus,
+select:focus {
+  outline: none;
+  ring: none;
+  box-shadow: none;
+}
+
+/* Remove focus ring specifically for the hashing form inputs */
+.hashing-form input:focus,
+.hashing-form select:focus {
+  outline: none;
+  ring: none;
+  box-shadow: none;
+}
+
+/* Alternative: Use Tailwind classes directly */
+.focus\\:ring-0:focus {
+  --tw-ring-shadow: 0 0 #0000 !important;
+}
+
+.focus:outline-none:focus {
+  outline: 2px solid transparent !important;
+  outline-offset: 2px !important;
+}

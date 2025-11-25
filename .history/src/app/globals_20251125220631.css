@@ -8,18 +8,25 @@ body {
 /* Hide focus indicators for all form inputs */
 input:focus,
 select:focus {
-  outline: none !important;
+  outline: none;
+  ring: none;
   box-shadow: none;
 }
+
+/* Remove focus ring specifically for the hashing form inputs */
 .hashing-form input:focus,
 .hashing-form select:focus {
   outline: none;
-
+  ring: none;
   box-shadow: none;
 }
-/* Chrome, Safari, Edge */
-input[type="number"]::-webkit-inner-spin-button,
-input[type="number"]::-webkit-outer-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
+
+/* Alternative: Use Tailwind classes directly */
+.focus:ring-0:focus {
+  --tw-ring-shadow: 0 0 #0000 !important;
+}
+
+.focus:outline-none:focus {
+  outline: 2px solid transparent !important;
+  outline-offset: 2px !important;
 }

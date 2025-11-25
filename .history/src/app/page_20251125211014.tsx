@@ -24,7 +24,7 @@ export default function Page() {
     <main className="min-h-screen p-8 bg-[#f3f5f7]">
       <div className="max-w-[1200px] mx-auto">
         <header className="flex items-center gap-6 mb-6">
-          <h1 className="text-4xl font-extrabold text-black" style={{ fontFamily: '"Lobster", Roboto, Arial' }}>
+          <h1 className="text-4xl font-extrabold" style={{ fontFamily: '"Lobster", Roboto, Arial' }}>
             Currency
           </h1>
           <nav className="flex-1">

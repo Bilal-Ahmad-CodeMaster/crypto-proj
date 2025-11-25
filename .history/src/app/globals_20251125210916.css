@@ -1,0 +1,56 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+/* Small helpers to match the design exactly */
+body {
+  @apply bg-gray-100 font-sans;
+}
+
+.tab-pill {
+  @apply inline-flex items-center justify-center px-4 py-2 rounded-t-md border border-transparent text-sm font-semibold;
+}
+
+.left-card {
+  border-radius: 6px;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.04);
+}
+
+/* precise card shapes used for the profit rows */
+.profit-left {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+.profit-right {
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}

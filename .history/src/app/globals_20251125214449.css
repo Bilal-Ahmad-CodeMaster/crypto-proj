@@ -1,0 +1,6 @@
+@import "tailwindcss";
+
+/* Small helpers to match the design exactly */
+body {
+  @apply bg-gray-50 font-sans text-gray-900 antialiased;
+}

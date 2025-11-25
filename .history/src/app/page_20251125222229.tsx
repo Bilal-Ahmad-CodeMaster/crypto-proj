@@ -40,7 +40,7 @@ export default function Page() {
 
 
           <div className="lg:col-span-2">
-            <ResultCards active={active} />
+            <ResultCards />
           </div>
         </div>
       </div>
