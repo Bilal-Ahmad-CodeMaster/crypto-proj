@@ -19,8 +19,9 @@ export default function Tabs({ active, setActive, tabs }: { active: string; setA
                     </div>
                 </button>
             </div>
+
             {/* Tabs - Desktop & Mobile */}
-            <div className={`flex flex-row gap-2 items-end overflow-x-auto scrollbar-hide ${isMenuOpen ? 'block' : 'hidden lg:flex'}`}>
+            <div className={`flex flex-row lg:flex-row gap-2 items-end ${isMenuOpen ? 'block' : 'hidden lg:flex'}`}>
                 {tabs.map(t => (
                     <button
                         key={t.id}
@@ -28,7 +29,7 @@ export default function Tabs({ active, setActive, tabs }: { active: string; setA
                             setActive(t.id)
                             setIsMenuOpen(false)
                         }}
-                        className={`flex-shrink-0 px-4 py-3 lg:px-5 lg:py-3 rounded-t-lg text-sm font-medium transition-all ${active === t.id
+                        className={`px-4 py-3 lg:px-5 lg:py-3 rounded-t-lg text-sm font-medium transition-all ${active === t.id
                             ? 'bg-white text-gray-900 border-t border-l border-r border-gray-200 shadow-sm'
                             : 'text-gray-500 hover:text-gray-700 bg-gray-100 hover:bg-gray-200'
                             }`}

@@ -23,7 +23,6 @@ input[type="number"]::-webkit-outer-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
-::-webkit-scrollbar {
+::-webkit-scrollbar{
   width: 0px !important;
-  display: none;
 }
