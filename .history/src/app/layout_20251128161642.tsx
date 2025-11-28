@@ -9,7 +9,7 @@ export const metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
-      <body className="relative min-h-screen overflow-auto lg:overflow-hidden">
+      <body className="relative min-h-screen overflow-auto lg:overflow-idden">
         {children}
         {/* <div className='fixed bottom-0 w-full z-10'>
           <Footer />
